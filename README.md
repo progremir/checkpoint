@@ -1,10 +1,10 @@
-# Telegram bot template based on telegraf.js.org
+# GamersList
 
-Please, enjoy this starter template for Telegram bots based on telegraf.js.org. It includes most common middlewares used by me, MongoDB integration, language picker and internationalization and shows basic encapsulation techniques used by me.
+Keeps track of your gaming list.
 
 # Installation and local launch
 
-1. Clone this repo: `git clone https://github.com/backmeupplz/telegraf-template`
+1. Clone this repo: `git clone https://github.com/progremir/gamers-list-bot`
 2. Launch the [mongo database](https://www.mongodb.com/) locally
 3. Create `.env` with the environment variables listed below
 4. Run `yarn install` in the root folder
