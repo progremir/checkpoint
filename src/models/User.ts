@@ -1,4 +1,5 @@
 import { prop, getModelForClass } from '@typegoose/typegoose'
+import { GameRecord } from './GameRecord'
 
 export class User {
   @prop({ required: true, index: true, unique: true })
@@ -6,10 +7,12 @@ export class User {
 
   @prop({ required: true, default: 'en' })
   language: string
+
+  @prop({ type: () => GameRecord, required: true, default: [] })
+  games: GameRecord[]
 }
 
-// Get User model
-const UserModel = getModelForClass(User, {
+export const UserModel = getModelForClass(User, {
   schemaOptions: { timestamps: true },
 })
 
