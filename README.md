@@ -16,6 +16,8 @@ And you should be good to go! Feel free to fork and submit pull requests. Thanks
 
 - `TOKEN` — Telegram bot token
 - `MONGO`— URL of the mongo database
+- `TWITCH_CLIENT_ID` - Twitch client ID
+- `TWITCH_APP_ACCESS_TOKEN` - Access code of the created Twitch app
 
 Also, please, consider looking at `.env.sample`.
 
