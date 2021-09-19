@@ -10,6 +10,7 @@ import { ignoreOldMessageUpdates } from '@/middlewares/ignoreOldMessageUpdates'
 import { sendHelp } from '@/handlers/sendHelp'
 import { i18n, attachI18N } from '@/helpers/i18n'
 import { setLanguage, sendLanguage } from '@/handlers/language'
+import { addGame } from '@/handlers/addGame'
 import { attachUser } from '@/middlewares/attachUser'
 
 // Middlewares
@@ -19,6 +20,7 @@ bot.use(i18n.middleware(), attachI18N)
 // Commands
 bot.command(['help', 'start'], sendHelp)
 bot.command('language', sendLanguage)
+bot.command('addGame', addGame)
 // Actions
 bot.action(localeActions, setLanguage)
 // Errors
